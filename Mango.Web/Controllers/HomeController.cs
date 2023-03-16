@@ -28,6 +28,10 @@ namespace Mango.Web.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Metodo Privacy
+        /// </summary>
+        /// <returns>Retorna la vista Privacy</returns>
         public IActionResult Privacy()
         {
             return View();
