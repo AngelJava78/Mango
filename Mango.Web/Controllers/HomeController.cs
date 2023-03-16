@@ -4,8 +4,14 @@ using System.Diagnostics;
 
 namespace Mango.Web.Controllers
 {
+    /// <summary>
+    /// HomeController
+    /// </summary>
     public class HomeController : Controller
     {
+        /// <summary>
+        /// Loger de la clase HomeController
+        /// </summary>
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -13,6 +19,10 @@ namespace Mango.Web.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Método Index
+        /// </summary>
+        /// <returns>Retorna la vista Index</returns>
         public IActionResult Index()
         {
             return View();
